@@ -38,3 +38,4 @@ build/
 .DS_Store
 src/main/java/top/oatnil/db_visualiser/generated_sources/jooq
 .idea
+*.excalidraw
