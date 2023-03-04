@@ -2,12 +2,12 @@ package top.oatnil.db_visualiser
 
 import top.oatnil.db_visualiser.core.RenderName
 import top.oatnil.db_visualiser.generated_sources.jooq.Tables
-import java.util.*
 
 fun main() {
     val usecase = Usecase()
     usecase.generate(
-        RenderName.Excalidraw, Arrays.asList(
+        RenderName.Excalidraw, listOf(
+            // TODO: 4/3/23 Modify the table you want to generate from
             Tables.TABLES,
             Tables.COLUMN_DOMAIN_USAGE,
             Tables.COLLATIONS,

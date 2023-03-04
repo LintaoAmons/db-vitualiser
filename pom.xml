@@ -80,6 +80,7 @@
                 <artifactId>jooq-codegen-maven</artifactId>
                 <version>${jooq.version}</version>
                 <configuration>
+                    <!-- TODO: Change the DB connection -->
                     <jdbc>
                         <driver>org.postgresql.Driver</driver>
                         <url>jdbc:postgresql://localhost/postgres</url>
@@ -90,6 +91,7 @@
                         <name>org.jooq.codegen.JavaGenerator</name>
                         <database>
                             <name>org.jooq.meta.postgres.PostgresDatabase</name>
+                            <!--  TODO: change the schema -->
                             <inputSchema>information_schema</inputSchema>
                             <excludes>.*_view$</excludes>
                         </database>
