@@ -22,6 +22,7 @@ class Usecase {
     private fun prepare(): DSLContext {
         val dataSource = PGSimpleDataSource()
 
+        // TODO: 4/3/23 Change the connection to your connections
         dataSource.serverNames = arrayOf("localhost")
         dataSource.portNumbers = intArrayOf(5432)
         dataSource.databaseName = "postgres"
